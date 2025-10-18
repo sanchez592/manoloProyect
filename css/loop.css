@@ -1,0 +1,83 @@
+.loop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    overflow: hidden;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .loop {
+        height: 20rem;
+    }
+}
+
+/* ------recomendacion de celulares------ */
+/* From Uiverse.io by ilkhoeri */
+.wrapper {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.inner {
+    --w: 100px;
+    --h: 150px;
+    --translateZ: calc((var(--w) + var(--h)) + 0px);
+    --rotateX: -15deg;
+    --perspective: 1000px;
+    position: absolute;
+    width: var(--w);
+    height: var(--h);
+    top: 25%;
+    left: calc(50% - (var(--w) / 2) - 2.5px);
+    z-index: 1;
+    transform-style: preserve-3d;
+    transform: perspective(var(--perspective));
+  animation: rotating 40s linear infinite; /* */
+}
+@keyframes rotating {
+    from {
+        transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+        rotateY(0);
+    }
+    to {
+        transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+        rotateY(1turn);
+}
+}
+
+.card:hover{
+    position: fixed;
+    transform: scale(2.5);
+    transition: all 1s ease-in-out;
+}
+.card {
+    width: 95px;
+    height: 140px;
+    position: absolute;
+    border: 2px solid rgba(var(--color-card));
+    border-radius: 12px;
+    overflow: hidden;
+    inset: 0;
+    padding: 5px;
+    transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
+    translateZ(var(--translateZ));
+}
+
+
+.img {
+    width: 100%;
+    height: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}

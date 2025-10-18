@@ -1,0 +1,162 @@
+/* Fondo general oscuro */
+body {
+  background: #0f0f10;
+  color: #eaeaea;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal del detalle */
+.detalle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 3rem 1rem;
+}
+
+/* Tarjeta principal */
+.detalle-card {
+  display: flex;
+  flex-direction: row;
+  background: #18191a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  max-width: 950px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detalle-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 35px rgba(236, 159, 71, 0.4);
+  border: 1px solid rgba(245, 171, 87, 0.74);
+}
+
+
+/* Imagen del teléfono */
+.detalle-img {
+  background: linear-gradient(180deg, #0f0f10 0%, #1c1d1f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.detalle-img img {
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px rgba(0, 150, 255, 0.4));
+}
+
+/* Información del teléfono */
+.detalle-info {
+  flex: 1;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detalle-info h1 {
+  font-size: 2rem;
+  color: #8efcfc;
+  margin-bottom: 0.5rem;
+}
+
+.precio {
+  font-size: 1.5rem;
+  color: #00b7ff;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.descripcion {
+  color: #c7c7c7;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Botón volver */
+.btn-volver {
+  display: inline-block;
+  width: fit-content;
+  background: linear-gradient(90deg, #00a2ff, #8efcfc);
+  color: #0f0f10;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .detalle-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detalle-img img {
+    width: 80%;
+  }
+
+  .detalle-info {
+    padding: 1.5rem;
+  }
+}
+
+.back-button {
+  background-color: transparent;
+  border: 2px solid #ff8800;
+  color: #ff8800;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ff8800;
+  color: #121212; /* el fondo oscuro de tu sitio */
+  box-shadow: 0 0 10px rgba(255, 136, 0, 0.5);
+}
+
+/* Contenedor de botones en detalle */
+.detalle-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Botón Comprar */
+.buy-button {
+  background: linear-gradient(90deg, #ff8800, #ffc14d);
+  color: #121212;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 2px solid #ff8800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #ffb84d;
+  color: #121212;
+  box-shadow: 0 0 15px rgba(255, 136, 0, 0.6);
+  transform: scale(1.05);
+}
+
