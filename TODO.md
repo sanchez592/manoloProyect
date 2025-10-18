@@ -1,5 +1,0 @@
-- [x] Update css/cellTarjeta.css: Change object-fit for .frond-page img from cover to contain to show full images without cropping.
-- [x] Update index.php: Change background-size for .img divs from cover to contain to fit full images in carousel.
-- [x] Fix .card position in css/loop.css to absolute and add width/height to center images properly.
-- [x] Update .img in css/loop.css to use background-size: contain, background-repeat: no-repeat, background-position: center for better centering.
-- [x] Test changes in browser to verify images fit frames properly.
