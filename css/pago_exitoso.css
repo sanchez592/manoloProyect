@@ -1,0 +1,72 @@
+body {
+  background: #0f0f10;
+  color: #eaeaea;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.exito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem 1rem;
+}
+
+.exito-card {
+  background: #18191a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  padding: 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+.exito-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 35px rgba(236, 159, 71, 0.4);
+}
+
+.exito-card h1 {
+  font-size: 2rem;
+  color: #8efcfc;
+  margin-bottom: 1rem;
+}
+
+.mensaje {
+  font-size: 1.1rem;
+  color: #cfcfcf;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.detalle {
+  font-size: 1rem;
+  color: #9ac7ff;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Botón volver */
+.btn-volver {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff8800, #ffc14d);
+  color: #121212;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: 2px solid #ff8800;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+  background-color: #ffb84d;
+  box-shadow: 0 0 15px rgba(255, 136, 0, 0.6);
+  transform: scale(1.05);
+}

@@ -1,0 +1,92 @@
+/* ==== pago.css (asegúrate que este archivo se cargue con la ruta /css/pago.css) ==== */
+
+/* Contenedor principal */
+.pago {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  min-height: 80vh;
+}
+
+/* Tarjeta */
+.pago-card {
+  background: #18191a;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  transition: all .3s ease;
+}
+.pago-card:hover {
+  box-shadow: 0 0 35px rgba(236,159,71,0.4);
+  transform: translateY(-6px);
+}
+
+/* Título */
+.pago-card h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #8efcfc;
+  margin-bottom: 1.5rem;
+}
+
+/* Form */
+.pago-card form { display:flex; flex-direction:column; gap:1rem; }
+.pago-card label { font-weight:700; }
+.pago-card input[type="text"],
+.pago-card input[type="email"],
+.pago-card select { padding:10px; border-radius:8px; border:1px solid #444; background:#121212; color:#eaeaea; font-size:1rem; }
+.pago-card input[type="text"]:focus,
+.pago-card select:focus { outline:none; border:2px solid #00b7ff; }
+
+/* Submit input (Confirmar Pago) */
+.pago-card input[type="submit"],
+.pago-card input.buy-confirm-button {
+  background: linear-gradient(90deg,#ff8800,#ffc14d);
+  color:#121212;
+  font-weight:700;
+  padding:12px 20px;
+  border-radius:10px;
+  border:2px solid #ff8800;
+  cursor:pointer;
+  transition:all .25s ease;
+  margin-top:8px;
+}
+.pago-card input[type="submit"]:hover,
+.pago-card input.buy-confirm-button:hover {
+  background:#ffb84d;
+  box-shadow:0 0 15px rgba(255,136,0,0.6);
+  transform:scale(1.03);
+}
+
+/* Link cancelar */
+a.go-back {
+  display:inline-block;
+  text-align:center;
+  background:transparent;
+  color:#ffffff;
+  font-weight:700;
+  padding:12px 20px;
+  border-radius:10px;
+  border:2px solid #ff8800;
+  text-decoration:none;
+  margin-top:8px;
+  box-shadow:0 0 5px rgba(255,136,0,0.15);
+}
+a.go-back:hover { box-shadow:inset 0 0 15px rgba(255,136,0,0.35); transform:scale(1.03); }
+
+/* small screens */
+@media (max-width:768px) {
+  .pago-card { padding:1.2rem; max-width:96%; }
+}
+
+#transferencia_fields label,
+#transferencia_fields select,
+#transferencia_fields input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+}
+
