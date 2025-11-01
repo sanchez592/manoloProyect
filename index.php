@@ -4,19 +4,7 @@ $page_title = 'TechZone - Inicio';
 include __DIR__ . '/header.php';
 
 ?>
-
 <link rel="stylesheet" href="<?php echo $base_url; ?>/css/loop.css?v=<?php echo $asset_version; ?>" />
-
-<div class="loop">
-  <video autoplay muted loop playsinline class="video-fondo">
-    <source src="assets/gif/publicidad.mp4" type="video/mp4">
-    Tu navegador no soporta videos HTML5.
-  </video>
-</div>
-
-<div class="empresa">
-  <h1>techzone Proyect</h1>
-</div>
 
 <!-- From Uiverse.io by ilkhoeri -->
 <div class="wrapper">

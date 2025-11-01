@@ -16,24 +16,6 @@ require_once __DIR__ . '/config.php';
       <img src="<?php echo $base_url; ?>/assets/1758346168795.png" class="button__imgL" alt="logo">
     </a>
 
-    <?php if (isset($page_title) && $page_title === 'TechZone - Inicio'): ?>
-      <div class="header-techzone-title">
-        <div class="presentacion">
-          <div class="color">
-            <div class="Nombre">
-              <span class="letra">T</span>
-              <span class="letra">E</span>
-              <span class="letra">C</span>
-              <span class="letra">H</span>
-              <span class="letra">Z</span>
-              <span class="letra">O</span>
-              <span class="letra">N</span>
-              <span class="letra">E</span>
-              </div>
-          </div>
-        </div>
-      </div>
-    <?php endif; ?>
     <div class="margenEncabezado">
       <div class="button__menu" role="button" aria-label="abrir menu">
         <img src="<?php echo $base_url; ?>/assets/menu.svg" class="button__img" alt="menu">

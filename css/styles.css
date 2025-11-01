@@ -27,7 +27,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 30;
-    box-shadow: 0 0 75px var(--color-accent)
+    box-shadow:  0 0 75px var(--color-accent)
 }
 .header-inner {
     display: flex;
@@ -44,6 +44,47 @@ body {
     font-size: 0.95rem;
 }
 .nav a:hover { color: var(--color-accent); }
+
+/*-----------------------FECHZONE--------------------------------------*/
+.presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    z-index: 5;
+    background-color: black;
+}
+.Nombre {
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.letra {
+    display: inline-block;
+    animation: saltar 2s ease-in-out  infinite forwards;
+}
+
+@keyframes saltar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); color: #ffbb00; }
+}
+
+/* retrasos simples para cada letra */
+.letra:nth-child(1){animation-delay:0s;}
+.letra:nth-child(2){animation-delay:0.2s;}
+.letra:nth-child(3){animation-delay:0.4s;}
+.letra:nth-child(4){animation-delay:0.6s;}
+.letra:nth-child(5){animation-delay:0.8s;}
+.letra:nth-child(6){animation-delay:1s;}
+.letra:nth-child(7){animation-delay:1.2s;}
+.letra:nth-child(8){animation-delay:1.4s;}
+
+
+
+
 
 /*-------------------------------------------------------------------------------------*/
 .container header-inner{
