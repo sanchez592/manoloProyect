@@ -88,16 +88,18 @@ require_once __DIR__ . '/config.php';
         <img src="<?php echo $base_url; ?>/assets/arrow.svg" class="list__arrow" alt="">
       </div>
 
-      <ul class="list__show">
-        <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Misión</a></li>
-        <li class="list__inside"><a href="#" class="nav__link nav__link--inside">Visión</a></li>
-      </ul>
+    <li class="list__inside">
+      <a href="<?php echo $base_url;?>/nosotros/mision.php" class="nav__link nav__link--inside">Misión</a>
+    </li>
+
+    <li class="list__inside">
+      <a href="<?php echo $base_url;?>/nosotros/vision.php" class="nav__link nav__link--inside">Visión</a>
     </li>
 
     <li class="list__item">
       <div class="list__button">
         <img src="<?php echo $base_url; ?>/assets/contactanos.svg" class="list__img" alt="">
-        <a href="#" class="nav__link">Contacto</a>
+        <a href="<?php echo $base_url;?>/contacto.php" class="nav__link">Contacto</a>
       </div>
     </li>
   </ul>
