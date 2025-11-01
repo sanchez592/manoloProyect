@@ -4,7 +4,7 @@ $page_title = 'TechZone - Visión';
 include __DIR__ . '/../header.php';
 ?>
 
-<link rel="stylesheet" href="<?php echo $base_url; ?>/css/info-empres.css">
+<link rel="stylesheet" href="<?php echo $base_url; ?>/css/info-empresa.css">
 
 <div class="info-container">
     <h1>Visión</h1>
@@ -19,3 +19,4 @@ include __DIR__ . '/../header.php';
 </div>
 
 <?php include '../footer.php'; ?>
+
